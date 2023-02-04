@@ -6,6 +6,58 @@
   height: 40vmin;
   pointer-events: none;
 }
+th{
+  left: -20px;
+  padding: 4px; background-color: orange; color:white; font-family: calibri}
+ td{text-align: center; padding: 10px 0; background-color: #fbf7f7}
+ #red{color:red;}
+ h1{text-align: center; font-family: calibri}
+.Nama{
+  font-family: "Sofia";
+  font-size: 70px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 5s steps(30, end) forwards, blinking 1s infinite;
+}
+.Namas{
+  font-family: "Sofia";
+  font-size: 100px;
+}
+.container{
+  display: grid;
+  place-items: center;
+}
+
+.bergerak {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 5s steps(30, end) forwards, blinking 1s infinite;
+}
+  
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blinking {
+  0% {border-color: transparent}
+  100% {border-color: transparent}
+}
+
+@media only screen and (max-width: 900px) {
+  .Nama{
+    font-size: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0;
+    animation: typing 5s steps(30, end) forwards, blinking 1s infinite;
+  }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
